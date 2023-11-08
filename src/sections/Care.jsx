@@ -5,9 +5,9 @@ const Care = () => {
   return (
     <section
       id="care"
-      className="flex flex-1 flex-col xl:flex-row gap-4 justify-between px-10 max-w-[1490px] mx-auto mb-[160px]"
+      className="flex flex-1 flex-col xl:flex-row gap-4 justify-between px-10 max-w-[1490px] mx-auto mb-[160px] border"
     >
-      <div className="flex flex-col justify-start w-[640px]">
+      <div className="flex flex-col justify-start">
         <h1 className="text-5xl lg:text-[64px] font-medium text-fontBlack mb-6">
           {careTitle}
         </h1>
@@ -19,9 +19,9 @@ const Care = () => {
           {careList.map((item, index) => (
             <div
               key={item.title}
-              className="flex flex-col xs:flex-row gap-6 items-center xs:items-start"
+              className="flex flex-col xs:flex-row gap-6 xs:items-start"
             >
-              <img src={item.img} alt="item-image" width={88} height={68} />
+              <img src={item.img} alt="item-image" width={80} height={60} />
               <div>
                 <h3 className="text-center xs:text-start mb-2 text-2xl lg:text-[28px] text-fontBlack font-medium">
                   {item.title}
@@ -34,7 +34,7 @@ const Care = () => {
           ))}
         </div>
       </div>
-      <img src={imageFour} alt="plants" />
+      <img src={imageFour} alt="plants" className="object-contain" />
     </section>
   );
 };
