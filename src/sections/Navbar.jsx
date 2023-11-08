@@ -28,7 +28,7 @@ const Navbar = () => {
         <img
           src={cartIcon}
           className="cursor-pointer ml-10 md:flex hidden"
-          alt=""
+          alt="" 
         />
 
         <div className="flex md:hidden w-full">
